@@ -44,16 +44,20 @@ public class PostItemListAdapter extends ArrayAdapter<PersonPostItem> {
             convertView = inflater.inflate(R.layout.item_post, parent, false);
             viewHolder.profilePic = (ImageView) convertView.findViewById(R.id.img_profilePicture);
             viewHolder.name = (TextView) convertView.findViewById(R.id.tv_name);
-            viewHolder.date = (TextView) convertView.findViewById(R.id.tv_itemdate);
+            viewHolder.category = (TextView) convertView.findViewById(R.id.tv_category);
+            viewHolder.elapsedTime = (TextView) convertView.findViewById(R.id.tv_elapsedTime);
+            viewHolder.message = (TextView) convertView.findViewById(R.id.tv_message);
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
         // Populate the data into the template view using the data object
 
-        viewHolder.weight.setText(set.getWeight()+"");
-        viewHolder.reps.setText(set.getReps()+"");
-        viewHolder.date.setText(set.getDate()+"");
+        /* todo set user profile pic */
+        viewHolder.name.setText(post.getPerson().getName());
+        viewHolder.category.setText(post.getCategory().getCategoryName());
+        viewHolder.elapsedTime.setText(post.getElapsedTime());
+        viewHolder.message.setText(post.getMessage().getMessage());
 
         // Return the completed view to render on screen
         return convertView;

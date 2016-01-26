@@ -1,6 +1,5 @@
 package letshangllc.kickit.FeedActivities;
 
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -11,12 +10,12 @@ import android.widget.ListView;
 import letshangllc.kickit.R;
 
 /**
- * A simple {@link Fragment} subclass.
+ * Created by cvburnha on 1/26/2016.
  */
-public class FavoritesFeedFragment extends Fragment {
+public class FeedParentFragment extends Fragment {
     private ListView listViewFeed;
 
-    public FavoritesFeedFragment() {
+    public FeedParentFragment() {
         // Required empty public constructor
     }
 
