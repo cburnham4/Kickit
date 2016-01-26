@@ -2,4 +2,5 @@
     <string name="app_name">Kickit</string>
 
     <string name="name">Name</string>
+    <string name="category">Category</string>
 </resources>
