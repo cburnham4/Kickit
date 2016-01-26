@@ -5,10 +5,21 @@ package letshangllc.kickit.PostItems;
  */
 public class Message {
     private String message;
+
+    public String getTimeCreated() {
+        return timeCreated;
+    }
+
+    public void setTimeCreated(String timeCreated) {
+        this.timeCreated = timeCreated;
+    }
+
     private String timeCreated;
 
-    public Message(String message) {
+    public Message(String message, String timeCreated) {
+
         this.message = message;
+        this.timeCreated = timeCreated;
     }
 
     public String getMessage() {
