@@ -25,12 +25,11 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
 
-    <!-- todo move floating button to activity feed -->
+
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab_createNewPost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:layout_margin="@dimen/fab_margin"
         app:backgroundTint="@color/colorPrimary"
         android:src="@drawable/ic_mode_edit_white_24dp"

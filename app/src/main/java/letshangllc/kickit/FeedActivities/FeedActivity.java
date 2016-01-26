@@ -1,5 +1,6 @@
 package letshangllc.kickit.FeedActivities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
@@ -15,6 +16,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
+import letshangllc.kickit.CreateNewPost.CreatePostActivity;
 import letshangllc.kickit.R;
 
 /**
@@ -43,7 +45,8 @@ public class FeedActivity extends AppCompatActivity {
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(FeedActivity.this, "FAB clicked", Toast.LENGTH_SHORT).show();
+                Intent createPostIntent = new Intent(FeedActivity.this, CreatePostActivity.class);
+                startActivity(createPostIntent);
             }
         });
     }
