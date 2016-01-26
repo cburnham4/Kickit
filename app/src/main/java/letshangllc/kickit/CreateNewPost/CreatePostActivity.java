@@ -19,13 +19,22 @@ public class CreatePostActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_create_post);
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
+
         et_category = (EditText) findViewById(R.id.et_category);
-        et_message = (EditText) findViewById(R.id.et_describe_activity);
+        et_message = (EditText) findViewById(R.id.et_message);
         btn_post_message = (Button) findViewById(R.id.btn_post_message);
 
 
