@@ -22,5 +22,5 @@
     <color name="textColorPrimary">@color/white</color>
     <color name="windowBackground">@color/white</color>
     <color name="navigationBarColor">#000000</color>
-    <color name="colorAccent">#c8e8ff</color>
+    <color name="colorAccent">#2962FF</color>
 </resources>

@@ -3,4 +3,5 @@
 
     <string name="name">Name</string>
     <string name="category">Category</string>
+    <string name="messageHint">Type Message</string>
 </resources>
