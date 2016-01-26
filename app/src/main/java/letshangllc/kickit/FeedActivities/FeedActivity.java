@@ -1,6 +1,7 @@
 package letshangllc.kickit.FeedActivities;
 
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -8,6 +9,8 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,6 +35,17 @@ public class FeedActivity extends AppCompatActivity {
 
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
+
+        FloatingActionButton floatingActionButton = (FloatingActionButton)
+                findViewById(R.id.fab_createNewPost);
+
+        /* Launch create post activity when the floating button is pressed */
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(FeedActivity.this, "FAB clicked", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     private void setupViewPager(ViewPager viewPager) {

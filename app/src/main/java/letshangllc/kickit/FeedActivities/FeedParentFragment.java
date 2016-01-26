@@ -2,6 +2,7 @@ package letshangllc.kickit.FeedActivities;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -54,6 +55,8 @@ public class FeedParentFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_feed, container, false);
+
+
 
         /* Find the list view feed */
         lv_feed = (ListView) view.findViewById(R.id.lv_feed);
