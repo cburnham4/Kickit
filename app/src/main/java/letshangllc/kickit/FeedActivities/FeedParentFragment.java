@@ -3,6 +3,7 @@ package letshangllc.kickit.FeedActivities;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,6 +25,7 @@ import letshangllc.kickit.R;
 
 
 public class FeedParentFragment extends Fragment {
+    private static String TAG = FeedParentFragment.class.getSimpleName();
     /* Private variables used to create the listview */
     private ListView lv_feed;
     private PostItemListAdapter postItemListAdapter;
@@ -58,7 +60,7 @@ public class FeedParentFragment extends Fragment {
 
         /* Create list adapter with current posts */
         postItemListAdapter = new PostItemListAdapter(activity, posts);
-
+        Log.i(TAG, "Post count: "+posts.size());
         lv_feed.setAdapter(postItemListAdapter);
 
 

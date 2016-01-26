@@ -13,8 +13,11 @@ import letshangllc.kickit.PostItems.PersonPostItem;
 public final class MockedFeed {
     private static ArrayList<PersonPostItem> friendsFeed;
 
-    private MockedFeed(){
+    public MockedFeed(){
         int id  = 1;
+
+        /* Add mocked posts to list */
+        friendsFeed = new ArrayList<>();
         friendsFeed.add(new PersonPostItem(id++,
                 new Person("Chase Burnham", "187812321"),
                 new Category("Outdoors"),
@@ -27,7 +30,7 @@ public final class MockedFeed {
                 "7"));
     }
 
-    private static ArrayList<PersonPostItem> getPosts(){
+    public static ArrayList<PersonPostItem> getPosts(){
         return friendsFeed;
     }
 }
