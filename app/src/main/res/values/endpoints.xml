@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hostname">http://ec2-52-34-255-148.us-west-2.compute.amazonaws.com/</string>
+    <string name="testPage">testquery.php</string>
+</resources>
